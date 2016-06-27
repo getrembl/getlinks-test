@@ -17,3 +17,10 @@ html
         th avatar
         th login
         th url
+      if (followers)
+        each follower in followers
+          tr
+            td
+              img.icon(src="#{follower.avatar_url}")
+            td= follower.login
+            td= follower.url

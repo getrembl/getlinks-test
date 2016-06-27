@@ -34,7 +34,7 @@ app.post('/', function (req, res) {
         });
       });
       console.log(users);
-      res.render('index', { title: 'Who\'s following you?', user: username, followers: users });
+      res.render('index', { title: 'Who\'s following ' + username + '?', user: username, followers: users });
     }
   });
 });
