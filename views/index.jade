@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')    
+
+  body
+    form#search(method="post")
+      if (user)
+        input(type='text', name='username', value='#{user}')
+      else
+        input(type='text', name='username')
+      input(type='submit')
+    br
+    table
+      tr
+        th avatar
+        th login
+        th url

@@ -1,0 +1,26 @@
+{
+  "name": "getlinks",
+  "version": "1.0.0",
+  "description": "create a page to list followers of a GitHub user",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easter42/getlinks-test.git"
+  },
+  "author": "easter42",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/easter42/getlinks-test/issues"
+  },
+  "homepage": "https://github.com/easter42/getlinks-test#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "octonode": "^0.7.6",
+    "path": "^0.12.7"
+  }
+}

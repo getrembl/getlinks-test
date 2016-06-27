@@ -1,0 +1,12 @@
+#search input {
+  margin: 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2px solid #ccc;
+  padding: 5px;
+}
