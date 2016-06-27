@@ -11,16 +11,20 @@ html
       else
         input(type='text', name='username')
       input(type='submit')
-    br
-    table
-      tr
-        th avatar
-        th login
-        th url
-      if (followers)
+
+    //- We check the existence of followers to know if the user exists
+    if (followers)
+      br
+      table
+        tr
+          th avatar
+          th login
+          th url
         each follower in followers
           tr
             td
               img.icon(src="#{follower.avatar_url}")
             td= follower.login
             td= follower.url
+    else
+      p This user doesn't exist
